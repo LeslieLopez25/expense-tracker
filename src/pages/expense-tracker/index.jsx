@@ -54,11 +54,11 @@ export const ExpenseTracker = () => {
           <div className="summary">
             <div className="income">
               <h4>Income</h4>
-              <p>{income}</p>
+              <p>${income}</p>
             </div>
             <div className="expenses">
               <h4>Expense</h4>
-              <p>{expenses}</p>
+              <p>${expenses}</p>
             </div>
           </div>
           <form className="add-transaction" onSubmit={onSubmit}>
