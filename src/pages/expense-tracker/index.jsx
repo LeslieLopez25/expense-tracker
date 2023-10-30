@@ -10,7 +10,11 @@ export const ExpenseTracker = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    addTransaction();
+    addTransaction({
+      description,
+      transactionAmount,
+      transactionType,
+    });
   };
 
   return (
