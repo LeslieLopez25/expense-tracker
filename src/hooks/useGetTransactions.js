@@ -14,10 +14,10 @@ export const useGetTransactions = () => {
   const [transactionTotals, setTransactionTotals] = useState({
     balance: 0.0,
     income: 0.0,
-    expense: 0.0,
+    expenses: 0.0,
   });
 
-  const transactionCollectionRef = collection(db, "transaction");
+  const transactionCollectionRef = collection(db, "transactions");
   const { userID } = useGetUserInfo();
 
   const getTransactions = async () => {
@@ -45,6 +45,8 @@ export const useGetTransactions = () => {
           } else {
             totalIncome += Number(data.transactionAmount);
           }
+
+          console.log(totalExpenses, totalIncome);
         });
 
         setTransactions(docs);
@@ -57,7 +59,7 @@ export const useGetTransactions = () => {
         });
       });
     } catch (err) {
-      console.log(err);
+      console.error(err);
     }
 
     return () => unsubscribe();
