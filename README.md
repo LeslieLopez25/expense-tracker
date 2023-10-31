@@ -1,3 +1,11 @@
+<h1>Expense Tracker</h1>
+
+<h2>An expense tracker to keep track of your budget.</h2>
+
+<p>This website was created using React and Firebase. You sign up to create your own account and from there you can keep an eye on your expenses and income to see how how your doing with your budget. Learned this from the tutorial of PedroTech.</p>
+
+- Live Site: [Expense Tracker](https://expense-tracker-ad89a.web.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
